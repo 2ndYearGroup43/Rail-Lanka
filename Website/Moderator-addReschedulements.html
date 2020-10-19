@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Rail Lanka</title>
+        <meta name="viewport" content="width-device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script  src="js/jquery-3.5.1.min.js"></script> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><a href="index.html"><img src="images/logonav1.jpg" alt="logo" height="85px"></a></div>
+                <label for="btn" class="icon">
+                    <span class="fa fa-bars" aria-hidden="true"></span>
+                </label>
+                <input type="checkbox" id="btn">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <label for="btn-1" class="show">ALERTS +</label>
+                        <a href="#"  class="active">Alerts
+                            <span class="fa fa-caret-down"  aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="btn-1">
+                        <ul>
+                            <li>
+                                <label for="btn-2" class="show2">ADD NEW ALERTS +</label>
+                                <a href="#">Add New Alerts <span class="fa fa-caret-right"></span></a>
+                                <input type="checkbox" id="btn-2">
+                                <ul>
+                                    <li><a href="Moderator-addCancellations.html">Cancellations</a></li>
+                                    <li><a href="Moderator-addDelays.html">Delays</a></li>
+                                    <li><a href="Moderator-addReschedulements.html">Reschedulements</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label for="btn-3" class="show2">ALERT MANAGEMENT +</label>
+                                <a href="#">Alert Management<span class="fa fa-caret-right"></span></a>
+                                <input type="checkbox" id="btn-3">
+                                <ul>
+                                    <li><a href="Moderator-manageCancellations.html">Cancellations</a></li>
+                                    <li><a href="Moderator-manageDelays.html">Delays</a></li>
+                                    <li><a href="Moderator-manageReschedulements.html">Reschedulements</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-4" class="show">JOURNEY +</label>
+                        <a href="#">Journey <span class="fa fa-caret-down"  aria-hidden="true"></span></a>
+                        <input type="checkbox" id="btn-4">
+                        <ul>
+                            <li><a href="Moderator-journeyAssignment.html">Driver Assignment</a></li>
+                            <li><a href="Moderator-journeyManagement.html">Manage Journey</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="btn-5" class="show">TRACKING +</label>
+                        <a href="Moderator-searchtracktrains.html">Tracking <span class="fa fa-caret-down" aria-hidden="true"></span> </a>
+                        <input type="checkbox" id="btn-5">
+                        <ul>
+                            <li><a href="Moderator-searchtracktrains.html">Track Trains</a></li>
+                            <li><a href="Moderator-viewtrainsmap.html">View Live Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Moderator-searchescheduletrains.html">Schedule</a></li>
+                    <li><a href="Moderator-account.html">Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+                <!-- <label id="icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>     -->
+            </nav>
+        </header>
+        <div class="body-section">
+            <div class="content-flexrow">
+                <div class="container">
+                    <div class="text">Add Alerts <small>Reschedulements</small></div>
+                    <form action="#">
+                        <div class="form-row">
+                            <div class="input-data">
+                                <label for="trainid">Train Id</label>
+                                <input type="text" name="trainid" id="trainid" required >
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data">
+                                <label for="newdate">New Date</label>
+                                <input type="date" name="newdate" id="newdate" required >
+                            </div>
+                            <div class="input-data">
+                                <label for="newtime">New Time</label>
+                                <input type="time" name="newtime" id="newtime" required >
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-data textarea">
+                                 <label for="reschedulementcause">Reschedulement-Cause</label>
+                                 <textarea name="reschedulementcause" id="reschedulementcause" cols="30" rows="10" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row submit-btn">
+                            <div class="input-data">
+                                <input type="submit" class="blue-btn" value="Add Alert">
+                            </div>    
+                            <div class="input-data">
+                                <input type="submit" class="blue-btn" value="Add & New Alert">
+                            </div>
+                            <div class="input-data">
+                                <input type="submit" class="red-btn" value="Back">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>About us</h2>
+                    <div class="content">
+                        <p>Rail Lanka is a web portal for railway passengers of Sri Lanka. We provide Reserveration services. Real time alerting service for the everyday railway passenger. Tracking feature that will allow passengers to track the location.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/SLRceylon/"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                            <a href="https://twitter.com/slrail?lang=en"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            <a href="https://www.instagram.com/destination_srilanka/?hl=en"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                            <a href="https://www.youtube.com/channel/UCAST0TQpmHhPrN9RTqVs4Ew"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="center box">
+                    <h2>Main Stations</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fa fa-map-marker" aria-hidden="true"></span>
+                            <span class="text">Colombo Fort</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fa fa-phone" aria-hidden="true"></span>
+                            <span class="text">+940112-695-722</span>
+                        </div>
+                        <div class="place">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span>
+                        <span class="text">Kandy</span>
+                        </div>
+                        <div class="phone">
+                                <span class="fa fa-phone" aria-hidden="true"></span>
+                                <span class="text">+940812-222-271</span>
+                        </div>
+                        <div class="email">
+                            <span class="fa fa-envelope" aria-hidden="true"></span>
+                            <span class="text"> gmr@railway.gov.lk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right box">
+                    <h2>Our Partners</h2>
+                    <div class="content">
+                        <ul class="footerlist">
+                            <li><span class="fa fa-caret-right fa-fw" aria-hidden="true"></span><a href="http://www.railway.gov.lk/web">Sri Lanka Railways</a></li>
+                            <li><span class="fa fa-caret-right fa-fw" aria-hidden="true"></span><a href="https://www.srilanka.travel">Sri Lanka Tourism</a></li>
+                            <li><span class="fa fa-caret-right fa-fw" aria-hidden="true"></span><a href="https://www.srilankan.com/">Sri Lanka Airlines</a></li>
+                            <li><span class="fa fa-caret-right fa-fw" aria-hidden="true"></span><a href="https://www.lonelyplanet.com/sri-lanka">Visit Sri Lanka</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+            
+    </body>
+
+</html>

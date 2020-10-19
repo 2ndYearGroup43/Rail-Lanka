@@ -1,0 +1,35 @@
+table.table-sortable{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 70%;
+    border-radius: 5px 5px 0 0;
+    opacity: 1;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+table.table-sortable thead tr{
+    background-color: #13406d;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+table.table-sortable th, td{
+    padding: 12px 15px;
+}
+
+table.table-sortable tbody tr{
+    border-bottom: 1px solid #c0c0c0;
+}
+
+table.table-sortable tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+table.table-sortable tbody tr:last-of-type{
+    border-bottom: 2px solid #13406d;
+}
