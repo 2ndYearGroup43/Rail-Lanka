@@ -55,6 +55,11 @@ nav ul{
     list-style: none;
     margin-right: 40px;
     position: relative;
+    /* padding-top: 15px; */
+}
+
+nav ul.main-nav{
+    padding-top: 15px;
 }
 
 nav ul li{
@@ -100,7 +105,7 @@ nav ul ul ul{
 }
 
 nav ul li:hover > ul{
-    top: 70px;
+    top: 85px;
     opacity: 1;
     visibility: visible;
 }
@@ -665,13 +670,14 @@ height: calc(100vh - 80px); */
 input.blue-btn:hover{
     color: #fff;
     background: #2476c7;
-    font-size: 101%;
+    font-size: 89%;
 }
 
 input.blue-btn{
     color: #fff;
     background: #13406d;
     margin: 1px;
+    /* padding: 8px; */
 }
 
 input.green-btn{
@@ -681,7 +687,7 @@ input.green-btn{
 input.green-btn:hover{
     color: #fff;
     background: #16c95b;
-    font-size: 101%;
+    font-size: 89%;
 }
 input.red-btn{
     color: #fff;
@@ -690,7 +696,7 @@ input.red-btn{
 input.red-btn:hover{
     color: #fff;
     background: #b90834;
-    font-size: 101%;
+    font-size: 89%;
 }
 
 
